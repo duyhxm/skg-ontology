@@ -1,0 +1,1356 @@
+<h2 id="crossreference" class="list">Cross-reference for Scholarly Knowledge Graph Core Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Scholarly Knowledge Graph Core Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Agent" title="https://duyhxm.github.io/skg-ontology/core#Agent">Agent</a></li>
+  <li><a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a></li>
+  <li><a href="#Conference" title="https://duyhxm.github.io/skg-ontology/core#Conference">Conference</a></li>
+  <li><a href="#DataProcessingMethod" title="https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod">Data processing method</a></li>
+  <li><a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a></li>
+  <li><a href="#EvaluationMethod" title="https://duyhxm.github.io/skg-ontology/core#EvaluationMethod">Evaluation method</a></li>
+  <li><a href="#IdentifierScheme" title="https://duyhxm.github.io/skg-ontology/core#IdentifierScheme">Identifier scheme</a></li>
+  <li><a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a></li>
+  <li><a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a></li>
+  <li><a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a></li>
+  <li><a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a></li>
+  <li><a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a></li>
+  <li><a href="#Person" title="https://duyhxm.github.io/skg-ontology/core#Person">Person</a></li>
+  <li><a href="#PresentationType" title="https://duyhxm.github.io/skg-ontology/core#PresentationType">Presentation type</a></li>
+  <li><a href="#PublicationVenue" title="https://duyhxm.github.io/skg-ontology/core#PublicationVenue">Publication venue</a></li>
+  <li><a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a></li>
+  <li><a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a></li>
+  <li><a href="#SourceTopic" title="https://duyhxm.github.io/skg-ontology/core#SourceTopic">Source topic</a></li>
+  <li><a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a></li>
+  <li><a href="#TopicSource" title="https://duyhxm.github.io/skg-ontology/core#TopicSource">Topic source</a></li>
+  <li><a href="#Track" title="https://duyhxm.github.io/skg-ontology/core#Track">Track</a></li>
+ </ul>
+ <div class="entity" id="Agent">
+  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Agent</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://duyhxm.github.io/skg-ontology/core#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAuthor" title="https://duyhxm.github.io/skg-ontology/core#hasAuthor">has author</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Architecture">
+  <h3>Architecture<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Architecture</p>
+  <div class="comment">
+   <span class="markdown">An abstract computational design used to build one or more models.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#architectureVariantOf" title="https://duyhxm.github.io/skg-ontology/core#architectureVariantOf">architecture variant of</a> <sup class="type-op" title="object property">op</sup>, <a href="#designedFor" title="https://duyhxm.github.io/skg-ontology/core#designedFor">designed for</a> <sup class="type-op" title="object property">op</sup>, <a href="#incorporates" title="https://duyhxm.github.io/skg-ontology/core#incorporates">incorporates</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#architectureVariantOf" title="https://duyhxm.github.io/skg-ontology/core#architectureVariantOf">architecture variant of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isInstanceOf" title="https://duyhxm.github.io/skg-ontology/core#isInstanceOf">is instance of</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Conference">
+  <h3>Conference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Conference</p>
+  <div class="comment">
+   <span class="markdown">An academic conference or symposium that publishes proceedings.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/spar/fabio/Conference" target="_blank" title="http://purl.org/spar/fabio/Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#PublicationVenue" title="https://duyhxm.github.io/skg-ontology/core#PublicationVenue">Publication venue</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://duyhxm.github.io/skg-ontology/core#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataProcessingMethod">
+  <h3>Data processing method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod</p>
+  <div class="comment">
+   <span class="markdown">A method used for data collection, augmentation, preprocessing, or transformation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#applies" title="https://duyhxm.github.io/skg-ontology/core#applies">applies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Dataset">
+  <h3>Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Dataset</p>
+  <div class="comment">
+   <span class="markdown">A curated dataset used to train or evaluate models.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.org/spar/fabio/Dataset" target="_blank" title="http://purl.org/spar/fabio/Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#supports" title="https://duyhxm.github.io/skg-ontology/core#supports">supports</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isEvaluatedOn" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn">is evaluated on</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTrainedOn" title="https://duyhxm.github.io/skg-ontology/core#isTrainedOn">is trained on</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EvaluationMethod">
+  <h3>Evaluation method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#EvaluationMethod</p>
+  <div class="comment">
+   <span class="markdown">A method used to evaluate, analyze, or benchmark model behavior or performance.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isEvaluatedBy" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy">is evaluated by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IdentifierScheme">
+  <h3>Identifier scheme<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#IdentifierScheme</p>
+  <div class="comment">
+   <span class="markdown">A taxonomy or namespace for identifiers (for example DOI or arXiv). This class represents identifier scheme type, not per-work identifier literal values.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCanonicalIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier">has canonical identifier</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasIdentifier">has identifier</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LearningParadigm">
+  <h3>Learning paradigm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#LearningParadigm</p>
+  <div class="comment">
+   <span class="markdown">A high-level framework that defines how learning occurs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addresses" title="https://duyhxm.github.io/skg-ontology/core#addresses">addresses</a> <sup class="type-op" title="object property">op</sup>, <a href="#designedFor" title="https://duyhxm.github.io/skg-ontology/core#designedFor">designed for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Method">
+  <h3>Method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Method</p>
+  <div class="comment">
+   <span class="markdown">A computational method used in model training, design, or evaluation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#DataProcessingMethod" title="https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod">Data processing method</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationMethod" title="https://duyhxm.github.io/skg-ontology/core#EvaluationMethod">Evaluation method</a> <sup class="type-c" title="class">c</sup>, <a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#designedFor" title="https://duyhxm.github.io/skg-ontology/core#designedFor">designed for</a> <sup class="type-op" title="object property">op</sup>, <a href="#methodVariantOf" title="https://duyhxm.github.io/skg-ontology/core#methodVariantOf">method variant of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#methodVariantOf" title="https://duyhxm.github.io/skg-ontology/core#methodVariantOf">method variant of</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Model">
+  <h3>Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Model</p>
+  <div class="comment">
+   <span class="markdown">A concrete trained or named model instance based on an architecture.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#applies" title="https://duyhxm.github.io/skg-ontology/core#applies">applies</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEvaluatedBy" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy">is evaluated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEvaluatedOn" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn">is evaluated on</a> <sup class="type-op" title="object property">op</sup>, <a href="#isInstanceOf" title="https://duyhxm.github.io/skg-ontology/core#isInstanceOf">is instance of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTrainedOn" title="https://duyhxm.github.io/skg-ontology/core#isTrainedOn">is trained on</a> <sup class="type-op" title="object property">op</sup>, <a href="#modelVariantOf" title="https://duyhxm.github.io/skg-ontology/core#modelVariantOf">model variant of</a> <sup class="type-op" title="object property">op</sup>, <a href="#solves" title="https://duyhxm.github.io/skg-ontology/core#solves">solves</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#modelVariantOf" title="https://duyhxm.github.io/skg-ontology/core#modelVariantOf">model variant of</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ModelDesignAndTrainingMethod">
+  <h3>Model design and training method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod</p>
+  <div class="comment">
+   <span class="markdown">A method used in model architecture design, training, optimization, or inference.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addresses" title="https://duyhxm.github.io/skg-ontology/core#addresses">addresses</a> <sup class="type-op" title="object property">op</sup>, <a href="#methodSubtype" title="https://duyhxm.github.io/skg-ontology/core#methodSubtype">method subtype</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#applies" title="https://duyhxm.github.io/skg-ontology/core#applies">applies</a> <sup class="type-op" title="object property">op</sup>, <a href="#incorporates" title="https://duyhxm.github.io/skg-ontology/core#incorporates">incorporates</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Organization</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Agent" title="https://duyhxm.github.io/skg-ontology/core#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Organization" target="_blank" title="https://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#organizationType" title="https://duyhxm.github.io/skg-ontology/core#organizationType">organization type</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#affiliatedWith" title="https://duyhxm.github.io/skg-ontology/core#affiliatedWith">affiliated with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://duyhxm.github.io/skg-ontology/core#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://duyhxm.github.io/skg-ontology/core#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Person</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Agent" title="https://duyhxm.github.io/skg-ontology/core#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Person" target="_blank" title="https://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://duyhxm.github.io/skg-ontology/core#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PresentationType">
+  <h3>Presentation type<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#PresentationType</p>
+  <div class="comment">
+   <span class="markdown">A classification of how a scholarly work was presented (e.g., Oral, Poster, Spotlight).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasPresentationType" title="https://duyhxm.github.io/skg-ontology/core#hasPresentationType">has presentation type</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PublicationVenue">
+  <h3>Publication venue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#PublicationVenue</p>
+  <div class="comment">
+   <span class="markdown">Conference, journal, workshop, or equivalent publication venue.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/Event" target="_blank" title="https://schema.org/Event">Event</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://duyhxm.github.io/skg-ontology/core#Conference">Conference</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#publishedIn" title="https://duyhxm.github.io/skg-ontology/core#publishedIn">published in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ScholarlyEntity">
+  <h3>Scholarly entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Agent" title="https://duyhxm.github.io/skg-ontology/core#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#IdentifierScheme" title="https://duyhxm.github.io/skg-ontology/core#IdentifierScheme">Identifier scheme</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>, <a href="#PresentationType" title="https://duyhxm.github.io/skg-ontology/core#PresentationType">Presentation type</a> <sup class="type-c" title="class">c</sup>, <a href="#PublicationVenue" title="https://duyhxm.github.io/skg-ontology/core#PublicationVenue">Publication venue</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#Track" title="https://duyhxm.github.io/skg-ontology/core#Track">Track</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#mentions" title="https://duyhxm.github.io/skg-ontology/core#mentions">mentions</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ScholarlyWork">
+  <h3>Scholarly work<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#ScholarlyWork</p>
+  <div class="comment">
+   <span class="markdown">A paper, article, preprint, or related scholarly work aligned with FaBiO and Schema.org.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/CreativeWork" target="_blank" title="https://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.org/spar/fabio/ScholarlyWork" target="_blank" title="http://purl.org/spar/fabio/ScholarlyWork">Scholarly Work</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addresses" title="https://duyhxm.github.io/skg-ontology/core#addresses">addresses</a> <sup class="type-op" title="object property">op</sup>, <a href="#cites" title="https://duyhxm.github.io/skg-ontology/core#cites">cites</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAuthor" title="https://duyhxm.github.io/skg-ontology/core#hasAuthor">has author</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCanonicalIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier">has canonical identifier</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasIdentifier">has identifier</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPresentationType" title="https://duyhxm.github.io/skg-ontology/core#hasPresentationType">has presentation type</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSourceTopic" title="https://duyhxm.github.io/skg-ontology/core#hasSourceTopic">has source topic</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTrack" title="https://duyhxm.github.io/skg-ontology/core#hasTrack">has track</a> <sup class="type-op" title="object property">op</sup>, <a href="#mentions" title="https://duyhxm.github.io/skg-ontology/core#mentions">mentions</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#publishedIn" title="https://duyhxm.github.io/skg-ontology/core#publishedIn">published in</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#cites" title="https://duyhxm.github.io/skg-ontology/core#cites">cites</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://duyhxm.github.io/skg-ontology/core#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://duyhxm.github.io/skg-ontology/core#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SourceTopic">
+  <h3>Source topic<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#SourceTopic</p>
+  <div class="comment">
+   <span class="markdown">A source-native topic concept as defined within one topic source.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSourceTopic" title="https://duyhxm.github.io/skg-ontology/core#hasSourceTopic">has source topic</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#TopicSource" title="https://duyhxm.github.io/skg-ontology/core#TopicSource">Topic source</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>Task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Task</p>
+  <div class="comment">
+   <span class="markdown">A machine-learning problem or objective. As a SKOS concept, tasks can be organized into taxonomies.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#addresses" title="https://duyhxm.github.io/skg-ontology/core#addresses">addresses</a> <sup class="type-op" title="object property">op</sup>, <a href="#designedFor" title="https://duyhxm.github.io/skg-ontology/core#designedFor">designed for</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#solves" title="https://duyhxm.github.io/skg-ontology/core#solves">solves</a> <sup class="type-op" title="object property">op</sup>, <a href="#supports" title="https://duyhxm.github.io/skg-ontology/core#supports">supports</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TopicSource">
+  <h3>Topic source<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#TopicSource</p>
+  <div class="comment">
+   <span class="markdown">A taxonomy source such as ArXiv or CSO.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SourceTopic" title="https://duyhxm.github.io/skg-ontology/core#SourceTopic">Source topic</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Track">
+  <h3>Track<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#Track</p>
+  <div class="comment">
+   <span class="markdown">A conference track (e.g., Main, Workshop, Datasets &amp; Benchmarks).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasTrack" title="https://duyhxm.github.io/skg-ontology/core#hasTrack">has track</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#addresses" title="https://duyhxm.github.io/skg-ontology/core#addresses">addresses</a></li>
+  <li><a href="#affiliatedWith" title="https://duyhxm.github.io/skg-ontology/core#affiliatedWith">affiliated with</a></li>
+  <li><a href="#applies" title="https://duyhxm.github.io/skg-ontology/core#applies">applies</a></li>
+  <li><a href="#architectureVariantOf" title="https://duyhxm.github.io/skg-ontology/core#architectureVariantOf">architecture variant of</a></li>
+  <li><a href="#cites" title="https://duyhxm.github.io/skg-ontology/core#cites">cites</a></li>
+  <li><a href="#designedFor" title="https://duyhxm.github.io/skg-ontology/core#designedFor">designed for</a></li>
+  <li><a href="#hasAuthor" title="https://duyhxm.github.io/skg-ontology/core#hasAuthor">has author</a></li>
+  <li><a href="#hasCanonicalIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier">has canonical identifier</a></li>
+  <li><a href="#hasIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasIdentifier">has identifier</a></li>
+  <li><a href="#hasPresentationType" title="https://duyhxm.github.io/skg-ontology/core#hasPresentationType">has presentation type</a></li>
+  <li><a href="#hasSourceTopic" title="https://duyhxm.github.io/skg-ontology/core#hasSourceTopic">has source topic</a></li>
+  <li><a href="#hasTrack" title="https://duyhxm.github.io/skg-ontology/core#hasTrack">has track</a></li>
+  <li><a href="#incorporates" title="https://duyhxm.github.io/skg-ontology/core#incorporates">incorporates</a></li>
+  <li><a href="#isEvaluatedBy" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy">is evaluated by</a></li>
+  <li><a href="#isEvaluatedOn" title="https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn">is evaluated on</a></li>
+  <li><a href="#isInstanceOf" title="https://duyhxm.github.io/skg-ontology/core#isInstanceOf">is instance of</a></li>
+  <li><a href="#isTrainedOn" title="https://duyhxm.github.io/skg-ontology/core#isTrainedOn">is trained on</a></li>
+  <li><a href="#mentions" title="https://duyhxm.github.io/skg-ontology/core#mentions">mentions</a></li>
+  <li><a href="#methodVariantOf" title="https://duyhxm.github.io/skg-ontology/core#methodVariantOf">method variant of</a></li>
+  <li><a href="#modelVariantOf" title="https://duyhxm.github.io/skg-ontology/core#modelVariantOf">model variant of</a></li>
+  <li><a href="#proposes" title="https://duyhxm.github.io/skg-ontology/core#proposes">proposes</a></li>
+  <li><a href="#publishedIn" title="https://duyhxm.github.io/skg-ontology/core#publishedIn">published in</a></li>
+  <li><a href="#solves" title="https://duyhxm.github.io/skg-ontology/core#solves">solves</a></li>
+  <li><a href="#supports" title="https://duyhxm.github.io/skg-ontology/core#supports">supports</a></li>
+  <li><a href="#uses" title="https://duyhxm.github.io/skg-ontology/core#uses">uses</a></li>
+ </ul>
+ <div class="entity" id="addresses">
+  <h3>addresses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#addresses</p>
+  <div class="comment">
+   <span class="markdown">Indicates that the scholarly work (paper-level) or a method/paradigm (entity-level) targets, investigates, or contributes to a specific machine-learning task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="affiliatedWith">
+  <h3>affiliated with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#affiliatedWith</p>
+  <div class="comment">
+   <span class="markdown">Affiliation predicate for publication-context RDF-Star annotation on quoted hasAuthor edges; direct agent-to-organization affiliation links are not canonical in this profile.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/affiliation" target="_blank" title="https://schema.org/affiliation">affiliation</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="applies">
+  <h3>applies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#applies</p>
+  <div class="comment">
+   <span class="markdown">Indicates a model or its training process applies a method (optimizer, loss, augmentation, or preprocessing technique).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataProcessingMethod" title="https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod">Data processing method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="architectureVariantOf">
+  <h3>architecture variant of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#architectureVariantOf</p>
+  <div class="comment">
+   <span class="markdown">Indicates an architecture is a variant or derivative of another architecture.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="cites">
+  <h3>cites<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#cites</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/spar/cito/cites" target="_blank" title="http://purl.org/spar/cito/cites">cites</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="designedFor">
+  <h3>designed for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#designedFor</p>
+  <div class="comment">
+   <span class="markdown">Indicates the design intent of an architecture, paradigm, or method towards a task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAuthor">
+  <h3>has author<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasAuthor</p>
+  <div class="comment">
+   <span class="markdown">Primary forward authorship edge for the current profile. Inverse traversal is resolved at query time.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/author" target="_blank" title="https://schema.org/author">author</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Agent" title="https://duyhxm.github.io/skg-ontology/core#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCanonicalIdentifier">
+  <h3>has canonical identifier<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier</p>
+  <div class="comment">
+   <span class="markdown">Optional preferred identifier scheme selected for merge or display policy.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasIdentifier">has identifier</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IdentifierScheme" title="https://duyhxm.github.io/skg-ontology/core#IdentifierScheme">Identifier scheme</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIdentifier">
+  <h3>has identifier<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasIdentifier</p>
+  <div class="comment">
+   <span class="markdown">Links a work to an identifier scheme node. In RDF-Star data, each quoted edge should carry exactly one identifier literal annotation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#hasCanonicalIdentifier" title="https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier">has canonical identifier</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IdentifierScheme" title="https://duyhxm.github.io/skg-ontology/core#IdentifierScheme">Identifier scheme</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPresentationType">
+  <h3>has presentation type<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasPresentationType</p>
+  <div class="comment">
+   <span class="markdown">Associates a scholarly work with the presentation format in which it was delivered at the venue.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PresentationType" title="https://duyhxm.github.io/skg-ontology/core#PresentationType">Presentation type</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSourceTopic">
+  <h3>has source topic<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasSourceTopic</p>
+  <div class="comment">
+   <span class="markdown">Direct work-to-topic edge. In RDF-Star data, each edge should be annotated with skg:sourceSystem and skg:confidenceScore.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SourceTopic" title="https://duyhxm.github.io/skg-ontology/core#SourceTopic">Source topic</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTrack">
+  <h3>has track<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasTrack</p>
+  <div class="comment">
+   <span class="markdown">Associates a scholarly work with the conference track under which it was published or presented.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Track" title="https://duyhxm.github.io/skg-ontology/core#Track">Track</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="incorporates">
+  <h3>incorporates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#incorporates</p>
+  <div class="comment">
+   <span class="markdown">Indicates an architecture includes a method as a core design component.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isEvaluatedBy">
+  <h3>is evaluated by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy</p>
+  <div class="comment">
+   <span class="markdown">Indicates the metric or analytical technique used to evaluate a model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EvaluationMethod" title="https://duyhxm.github.io/skg-ontology/core#EvaluationMethod">Evaluation method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isEvaluatedOn">
+  <h3>is evaluated on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn</p>
+  <div class="comment">
+   <span class="markdown">Indicates model performance is measured on a dataset.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isInstanceOf">
+  <h3>is instance of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#isInstanceOf</p>
+  <div class="comment">
+   <span class="markdown">Indicates a model is an instance of an abstract architecture.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isTrainedOn">
+  <h3>is trained on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#isTrainedOn</p>
+  <div class="comment">
+   <span class="markdown">Indicates model weights are learned from a dataset.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mentions">
+  <h3>mentions<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#mentions</p>
+  <div class="comment">
+   <span class="markdown">Indicates that the scholarly work mentions an entity without explicitly proposing, using, or addressing it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/mentions" target="_blank" title="https://schema.org/mentions">mentions</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ScholarlyEntity" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity">Scholarly entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="methodVariantOf">
+  <h3>method variant of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#methodVariantOf</p>
+  <div class="comment">
+   <span class="markdown">Indicates a method is an improvement, modification, or variant of another method.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="modelVariantOf">
+  <h3>model variant of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#modelVariantOf</p>
+  <div class="comment">
+   <span class="markdown">Indicates a model is an improvement, modification, or specialization of another model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="proposes">
+  <h3>proposes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#proposes</p>
+  <div class="comment">
+   <span class="markdown">Indicates that the scholarly work introduces or proposes a new model, architecture, method, task, dataset, or learning paradigm.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="publishedIn">
+  <h3>published in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#publishedIn</p>
+  <div class="comment">
+   <span class="markdown">Work to publication venue.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PublicationVenue" title="https://duyhxm.github.io/skg-ontology/core#PublicationVenue">Publication venue</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="solves">
+  <h3>solves<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#solves</p>
+  <div class="comment">
+   <span class="markdown">Indicates a model is designed or applied to solve a task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="supports">
+  <h3>supports<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#supports</p>
+  <div class="comment">
+   <span class="markdown">Indicates a dataset is created or curated to support a task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://duyhxm.github.io/skg-ontology/core#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="uses">
+  <h3>uses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#uses</p>
+  <div class="comment">
+   <span class="markdown">Indicates that the scholarly work utilizes an existing entity. LearningParadigm included for works that actively employ a paradigm (e.g., 'we use federated learning').</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ScholarlyWork" title="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork">Scholarly work</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Architecture" title="https://duyhxm.github.io/skg-ontology/core#Architecture">Architecture</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Dataset" title="https://duyhxm.github.io/skg-ontology/core#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#LearningParadigm" title="https://duyhxm.github.io/skg-ontology/core#LearningParadigm">Learning paradigm</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://duyhxm.github.io/skg-ontology/core#Method">Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Model" title="https://duyhxm.github.io/skg-ontology/core#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#confidenceScore" title="https://duyhxm.github.io/skg-ontology/core#confidenceScore">confidence score</a></li>
+  <li><a href="#hasIdentifierValue" title="https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue">has identifier value</a></li>
+  <li><a href="#methodSubtype" title="https://duyhxm.github.io/skg-ontology/core#methodSubtype">method subtype</a></li>
+  <li><a href="#organizationType" title="https://duyhxm.github.io/skg-ontology/core#organizationType">organization type</a></li>
+  <li><a href="#sourceSystem" title="https://duyhxm.github.io/skg-ontology/core#sourceSystem">source system</a></li>
+ </ul>
+ <div class="entity" id="confidenceScore">
+  <h3>confidence score<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#confidenceScore</p>
+  <div class="comment">
+   <span class="markdown">Recommended normalized range is 0.0 to 1.0. Intended for RDF-Star edge annotations.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIdentifierValue">
+  <h3>has identifier value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue</p>
+  <div class="comment">
+   <span class="markdown">Identifier literal value attached to quoted triple &lt;&lt;work skg:hasIdentifier scheme&gt;&gt;. Do not attach this literal directly to work or scheme nodes. Value must be normalized before loading.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="methodSubtype">
+  <h3>method subtype<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#methodSubtype</p>
+  <div class="comment">
+   <span class="markdown">Categorizes the specific role of a training method. Validation is enforced at the Pydantic layer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ModelDesignAndTrainingMethod" title="https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod">Model design and training method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="organizationType">
+  <h3>organization type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#organizationType</p>
+  <div class="comment">
+   <span class="markdown">Classification of the organization. Validation is enforced at the Pydantic layer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Organization" title="https://duyhxm.github.io/skg-ontology/core#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sourceSystem">
+  <h3>source system<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core#sourceSystem</p>
+  <div class="comment">
+   <span class="markdown">Intended for RDF-Star edge annotations, for example &lt;&lt;paper skg:hasSourceTopic topic&gt;&gt; skg:sourceSystem "arxiv_api".</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#" title="https://duyhxm.github.io/skg-ontology/core"> <span>core</span> </a></li>
+ </ul>
+ <div class="entity" id="">
+  <h3>core<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://duyhxm.github.io/skg-ontology/core</p>
+  <dl class="description">
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">issued</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2026-05-01"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Scholarly Knowledge Graph Core Ontology"@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

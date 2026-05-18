@@ -1,0 +1,400 @@
+#################################################################
+#
+#    Scholarly Knowledge Graph Ontology (SKG)
+#    Version: 6.0.0
+#    Date: 2026-05-01
+#
+#    Purpose:
+#    - Core ontology for scholarly data provisioning.
+#    - Maximal alignment with standard vocabularies.
+#    - RDF-Star innovation profile for provenance annotations.
+#
+#################################################################
+
+@prefix skg: <https://duyhxm.github.io/skg-ontology/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+
+#################################################################
+# 1) Ontology Header
+#################################################################
+
+<https://duyhxm.github.io/skg-ontology/core> a owl:Ontology ;
+    owl:versionIRI <https://duyhxm.github.io/skg-ontology/core/6.0.0> ;
+    owl:versionInfo "6.0.0" ;
+    dcterms:title "Scholarly Knowledge Graph Core Ontology"@en ;
+    dcterms:description "Core ontology for scholarly knowledge graph data aligned with Dublin Core, Schema.org, FOAF, FaBiO, SKOS, PROV-O, and CiTO while preserving RDF-Star innovation patterns."@en ;
+    dcterms:issued "2026-05-01"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Core TBox for multi-venue scholarly graph generation. Uses standard predicates where possible and preserves RDF-Star edge annotation patterns for provenance and confidence."@en .
+
+#################################################################
+# 2) Core Classes
+#################################################################
+
+skg:ScholarlyEntity a owl:Class ;
+    rdfs:label "Scholarly entity"@en .
+
+skg:ScholarlyWork a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    fabio:ScholarlyWork,
+                    schema:CreativeWork ;
+    rdfs:label "Scholarly work"@en ;
+    rdfs:comment "A paper, article, preprint, or related scholarly work aligned with FaBiO and Schema.org."@en .
+
+skg:PublicationVenue a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    schema:Event ;
+    rdfs:label "Publication venue"@en ;
+    rdfs:comment "Conference, journal, workshop, or equivalent publication venue."@en .
+
+skg:Conference a owl:Class ;
+    rdfs:subClassOf skg:PublicationVenue,
+                    fabio:Conference ;
+    rdfs:label "Conference"@en ;
+    rdfs:comment "An academic conference or symposium that publishes proceedings."@en .
+
+skg:Track a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity ;
+    rdfs:label "Track"@en ;
+    rdfs:comment "A conference track (e.g., Main, Workshop, Datasets & Benchmarks)."@en .
+
+skg:PresentationType a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity ;
+    rdfs:label "Presentation type"@en ;
+    rdfs:comment "A classification of how a scholarly work was presented (e.g., Oral, Poster, Spotlight)."@en .
+
+skg:Agent a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    foaf:Agent,
+                    prov:Agent ;
+    rdfs:label "Agent"@en .
+
+skg:Person a owl:Class ;
+    rdfs:subClassOf skg:Agent,
+                    foaf:Person,
+                    schema:Person ;
+    rdfs:label "Person"@en .
+
+skg:Organization a owl:Class ;
+    rdfs:subClassOf skg:Agent,
+                    foaf:Organization,
+                    schema:Organization ;
+    rdfs:label "Organization"@en .
+
+skg:IdentifierScheme a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity ;
+    rdfs:label "Identifier scheme"@en ;
+    rdfs:comment "A taxonomy or namespace for identifiers (for example DOI or arXiv). This class represents identifier scheme type, not per-work identifier literal values."@en .
+
+skg:Task a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept ;
+    rdfs:label "Task"@en ;
+    rdfs:comment "A machine-learning problem or objective. As a SKOS concept, tasks can be organized into taxonomies."@en .
+
+skg:Dataset a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept,
+                    fabio:Dataset ;
+    rdfs:label "Dataset"@en ;
+    rdfs:comment "A curated dataset used to train or evaluate models."@en .
+
+skg:Method a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept ;
+    rdfs:label "Method"@en ;
+    rdfs:comment "A computational method used in model training, design, or evaluation."@en .
+
+skg:ModelDesignAndTrainingMethod a owl:Class ;
+    rdfs:subClassOf skg:Method ;
+    rdfs:label "Model design and training method"@en ;
+    rdfs:comment "A method used in model architecture design, training, optimization, or inference."@en .
+
+skg:DataProcessingMethod a owl:Class ;
+    rdfs:subClassOf skg:Method ;
+    rdfs:label "Data processing method"@en ;
+    rdfs:comment "A method used for data collection, augmentation, preprocessing, or transformation."@en .
+
+skg:EvaluationMethod a owl:Class ;
+    rdfs:subClassOf skg:Method ;
+    rdfs:label "Evaluation method"@en ;
+    rdfs:comment "A method used to evaluate, analyze, or benchmark model behavior or performance."@en .
+
+skg:Architecture a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept ;
+    rdfs:label "Architecture"@en ;
+    rdfs:comment "An abstract computational design used to build one or more models."@en .
+
+skg:Model a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept ;
+    rdfs:label "Model"@en ;
+    rdfs:comment "A concrete trained or named model instance based on an architecture."@en .
+
+skg:LearningParadigm a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity,
+                    skos:Concept ;
+    rdfs:label "Learning paradigm"@en ;
+    rdfs:comment "A high-level framework that defines how learning occurs."@en .
+
+#################################################################
+# 3) Topic and Taxonomy Classes
+#################################################################
+
+skg:TopicSource a owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    rdfs:label "Topic source"@en ;
+    rdfs:comment "A taxonomy source such as ArXiv or CSO."@en .
+
+skg:SourceTopic a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Source topic"@en ;
+    rdfs:comment "A source-native topic concept as defined within one topic source."@en .
+
+#################################################################
+# 4) Disjointness Axioms
+#################################################################
+
+skg:ScholarlyWork owl:disjointWith skg:Person, skg:Organization, skg:Conference .
+skg:Person owl:disjointWith skg:Organization, skg:Conference .
+skg:Organization owl:disjointWith skg:Conference .
+
+skg:Task owl:disjointWith skg:Dataset, skg:Model, skg:Architecture, skg:Method, skg:LearningParadigm .
+skg:Dataset owl:disjointWith skg:Model, skg:Architecture, skg:Method, skg:LearningParadigm .
+skg:Model owl:disjointWith skg:Architecture, skg:Method, skg:LearningParadigm .
+skg:Architecture owl:disjointWith skg:Method, skg:LearningParadigm .
+skg:Method owl:disjointWith skg:LearningParadigm .
+
+skg:SourceTopic owl:disjointWith skg:TopicSource .
+
+#################################################################
+# 5) Core Object Properties
+#################################################################
+
+skg:hasAuthor a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:author ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:Agent ;
+    rdfs:label "has author"@en ;
+    rdfs:comment "Primary forward authorship edge for the current profile. Inverse traversal is resolved at query time."@en .
+
+skg:affiliatedWith a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:affiliation ;
+    rdfs:range skg:Organization ;
+    rdfs:label "affiliated with"@en ;
+    rdfs:comment "Affiliation predicate for publication-context RDF-Star annotation on quoted hasAuthor edges; direct agent-to-organization affiliation links are not canonical in this profile."@en .
+
+skg:publishedIn a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:PublicationVenue ;
+    rdfs:label "published in"@en ;
+    rdfs:comment "Work to publication venue."@en .
+
+skg:hasTrack a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:Track ;
+    rdfs:label "has track"@en ;
+    rdfs:comment "Associates a scholarly work with the conference track under which it was published or presented."@en .
+
+skg:hasPresentationType a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:PresentationType ;
+    rdfs:label "has presentation type"@en ;
+    rdfs:comment "Associates a scholarly work with the presentation format in which it was delivered at the venue."@en .
+
+skg:cites a owl:ObjectProperty ;
+    rdfs:subPropertyOf cito:cites ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:ScholarlyWork ;
+    rdfs:label "cites"@en .
+
+skg:hasIdentifier a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:IdentifierScheme ;
+    rdfs:label "has identifier"@en ;
+    rdfs:comment "Links a work to an identifier scheme node. In RDF-Star data, each quoted edge should carry exactly one identifier literal annotation."@en .
+
+skg:hasCanonicalIdentifier a owl:ObjectProperty ;
+    rdfs:subPropertyOf skg:hasIdentifier ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:IdentifierScheme ;
+    rdfs:label "has canonical identifier"@en ;
+    rdfs:comment "Optional preferred identifier scheme selected for merge or display policy."@en .
+
+skg:solves a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:Task ;
+    rdfs:label "solves"@en ;
+    rdfs:comment "Indicates a model is designed or applied to solve a task."@en .
+
+skg:isTrainedOn a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:Dataset ;
+    rdfs:label "is trained on"@en ;
+    rdfs:comment "Indicates model weights are learned from a dataset."@en .
+
+skg:isEvaluatedOn a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:Dataset ;
+    rdfs:label "is evaluated on"@en ;
+    rdfs:comment "Indicates model performance is measured on a dataset."@en .
+
+skg:isInstanceOf a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:Architecture ;
+    rdfs:label "is instance of"@en ;
+    rdfs:comment "Indicates a model is an instance of an abstract architecture."@en .
+
+skg:applies a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf ( skg:ModelDesignAndTrainingMethod skg:DataProcessingMethod )
+    ] ;
+    rdfs:label "applies"@en ;
+    rdfs:comment "Indicates a model or its training process applies a method (optimizer, loss, augmentation, or preprocessing technique)."@en .
+
+skg:incorporates a owl:ObjectProperty ;
+    rdfs:domain skg:Architecture ;
+    rdfs:range skg:ModelDesignAndTrainingMethod ;
+    rdfs:label "incorporates"@en ;
+    rdfs:comment "Indicates an architecture includes a method as a core design component."@en .
+
+skg:supports a owl:ObjectProperty ;
+    rdfs:domain skg:Dataset ;
+    rdfs:range skg:Task ;
+    rdfs:label "supports"@en ;
+    rdfs:comment "Indicates a dataset is created or curated to support a task."@en .
+
+skg:modelVariantOf a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:Model ;
+    rdfs:label "model variant of"@en ;
+    rdfs:comment "Indicates a model is an improvement, modification, or specialization of another model."@en .
+
+skg:methodVariantOf a owl:ObjectProperty ;
+    rdfs:domain skg:Method ;
+    rdfs:range skg:Method ;
+    rdfs:label "method variant of"@en ;
+    rdfs:comment "Indicates a method is an improvement, modification, or variant of another method."@en .
+
+skg:architectureVariantOf a owl:ObjectProperty ;
+    rdfs:domain skg:Architecture ;
+    rdfs:range skg:Architecture ;
+    rdfs:label "architecture variant of"@en ;
+    rdfs:comment "Indicates an architecture is a variant or derivative of another architecture."@en .
+
+skg:proposes a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf ( skg:Model skg:Architecture skg:Method skg:Task skg:Dataset skg:LearningParadigm )
+    ] ;
+    rdfs:label "proposes"@en ;
+    rdfs:comment "Indicates that the scholarly work introduces or proposes a new model, architecture, method, task, dataset, or learning paradigm."@en .
+
+skg:uses a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf ( skg:Model skg:Architecture skg:Method skg:Dataset skg:LearningParadigm )
+    ] ;
+    rdfs:label "uses"@en ;
+    rdfs:comment "Indicates that the scholarly work utilizes an existing entity. LearningParadigm included for works that actively employ a paradigm (e.g., 'we use federated learning')."@en .
+
+skg:addresses a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( skg:ScholarlyWork skg:LearningParadigm skg:ModelDesignAndTrainingMethod )
+    ] ;
+    rdfs:range skg:Task ;
+    rdfs:label "addresses"@en ;
+    rdfs:comment "Indicates that the scholarly work (paper-level) or a method/paradigm (entity-level) targets, investigates, or contributes to a specific machine-learning task."@en .
+
+skg:mentions a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:mentions ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:ScholarlyEntity ;
+    rdfs:label "mentions"@en ;
+    rdfs:comment "Indicates that the scholarly work mentions an entity without explicitly proposing, using, or addressing it."@en .
+
+skg:designedFor a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( skg:Architecture skg:LearningParadigm skg:Method )
+    ] ;
+    rdfs:range skg:Task ;
+    rdfs:label "designed for"@en ;
+    rdfs:comment "Indicates the design intent of an architecture, paradigm, or method towards a task."@en .
+
+skg:isEvaluatedBy a owl:ObjectProperty ;
+    rdfs:domain skg:Model ;
+    rdfs:range skg:EvaluationMethod ;
+    rdfs:label "is evaluated by"@en ;
+    rdfs:comment "Indicates the metric or analytical technique used to evaluate a model."@en .
+
+#################################################################
+# 6) Topic and Taxonomy Properties
+#################################################################
+
+skg:hasSourceTopic a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg:SourceTopic ;
+    rdfs:label "has source topic"@en ;
+    rdfs:comment "Direct work-to-topic edge. In RDF-Star data, each edge should be annotated with skg:sourceSystem and skg:confidenceScore."@en .
+
+#################################################################
+# 7) Datatype Properties
+#################################################################
+
+# Standard predicates adopted in v6.
+# Validation for these predicates is intentionally enforced in SHACL
+# (`skg-core.shacl.ttl`) rather than OWL domain/range axioms.
+dcterms:title a owl:DatatypeProperty .
+dcterms:abstract a owl:DatatypeProperty .
+dcterms:issued a owl:DatatypeProperty .
+schema:name a owl:DatatypeProperty .
+foaf:name a owl:DatatypeProperty .
+schema:url a owl:DatatypeProperty .
+schema:contentUrl a owl:DatatypeProperty .
+schema:addressCountry a owl:DatatypeProperty .
+
+# RDF-Star innovation properties retained.
+skg:hasIdentifierValue a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has identifier value"@en ;
+    rdfs:comment "Identifier literal value attached to quoted triple <<work skg:hasIdentifier scheme>>. Do not attach this literal directly to work or scheme nodes. Value must be normalized before loading."@en .
+
+skg:confidenceScore a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "confidence score"@en ;
+    rdfs:comment "Recommended normalized range is 0.0 to 1.0. Intended for RDF-Star edge annotations."@en .
+
+skg:sourceSystem a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "source system"@en ;
+    rdfs:comment "Intended for RDF-Star edge annotations, for example <<paper skg:hasSourceTopic topic>> skg:sourceSystem \"arxiv_api\"."@en .
+
+skg:organizationType a owl:DatatypeProperty ;
+    rdfs:domain skg:Organization ;
+    rdfs:range xsd:string ;
+    rdfs:label "organization type"@en ;
+    rdfs:comment "Classification of the organization. Validation is enforced at the Pydantic layer."@en .
+
+skg:methodSubtype a owl:DatatypeProperty ;
+    rdfs:domain skg:ModelDesignAndTrainingMethod ;
+    rdfs:range xsd:string ;
+    rdfs:label "method subtype"@en ;
+    rdfs:comment "Categorizes the specific role of a training method. Validation is enforced at the Pydantic layer."@en .

@@ -1,0 +1,90 @@
+#################################################################
+#
+#    Scholarly Knowledge Graph Ontology (SKG)
+#    NeurIPS Seed ABox
+#    Version: 6.0.0
+#    Date: 2026-05-01
+#
+#    Purpose:
+#    - Provide starter NeurIPS individuals for extension terms.
+#    - Provide reusable cross-venue seed nodes (identifier schemes, topic sources).
+#    - Keep instance data separate from TBox schema files.
+#
+#################################################################
+
+@prefix skg: <https://duyhxm.github.io/skg-ontology/core#> .
+@prefix skg-neurips: <https://duyhxm.github.io/skg-ontology/neurips#> .
+@prefix skgr: <https://duyhxm.github.io/skg-ontology/resource/core/> .
+@prefix skgr-neurips: <https://duyhxm.github.io/skg-ontology/resource/neurips/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#################################################################
+# 1) Ontology Header
+#################################################################
+
+<https://duyhxm.github.io/skg-ontology/resource/neurips/seed> a owl:Ontology ;
+    owl:imports <https://duyhxm.github.io/skg-ontology/core> ;
+    owl:imports <https://duyhxm.github.io/skg-ontology/neurips> ;
+    owl:versionIRI <https://duyhxm.github.io/skg-ontology/resource/neurips/seed/6.0.0> ;
+    owl:versionInfo "6.0.0" ;
+    dcterms:title "SKG NeurIPS Seed Individuals"@en ;
+    dcterms:description "ABox seed individuals for NeurIPS extension terms and reusable shared resources."@en ;
+    dcterms:issued "2026-05-01"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+#################################################################
+# 2) NeurIPS Track Individuals (Venue-specific)
+#################################################################
+
+skgr-neurips:trackMain a skg-neurips:NeuripsTrack ;
+    rdfs:label "Main"@en ;
+    rdfs:comment "Main NeurIPS track."@en .
+
+skgr-neurips:trackDatasetsAndBenchmarks a skg-neurips:NeuripsTrack ;
+    rdfs:label "Datasets and Benchmarks"@en ;
+    rdfs:comment "Datasets and Benchmarks track."@en .
+
+#################################################################
+# 3) Presentation Type Individuals (Venue-specific)
+#################################################################
+
+skgr-neurips:presentationPoster a skg-neurips:NeuripsPresentationType ;
+    rdfs:label "Poster"@en .
+
+skgr-neurips:presentationOral a skg-neurips:NeuripsPresentationType ;
+    rdfs:label "Oral"@en .
+
+skgr-neurips:presentationSpotlight a skg-neurips:NeuripsPresentationType ;
+    rdfs:label "Spotlight"@en ;
+    rdfs:comment "Spotlight presentation format used in NeurIPS 2021-2022."@en .
+
+#################################################################
+# 4) Identifier Scheme Individuals (Shared Core Resources)
+#################################################################
+
+skgr:doiScheme a skg:IdentifierScheme ;
+    rdfs:label "DOI scheme"@en ;
+    rdfs:comment "Identifier scheme node for DOI values attached via RDF-star hasIdentifierValue."@en .
+
+skgr:arxivScheme a skg:IdentifierScheme ;
+    rdfs:label "arXiv ID scheme"@en ;
+    rdfs:comment "Identifier scheme node for arXiv ID values attached via RDF-star hasIdentifierValue."@en .
+
+skgr:openReviewScheme a skg:IdentifierScheme ;
+    rdfs:label "OpenReview ID scheme"@en ;
+    rdfs:comment "Identifier scheme node for OpenReview ID values attached via RDF-star hasIdentifierValue."@en .
+
+#################################################################
+# 5) Topic Source Individuals (Shared Core Resources)
+#################################################################
+
+skgr:arxivTopicSource a skg:TopicSource ;
+    rdfs:label "arXiv taxonomy"@en ;
+    rdfs:comment "Macro-level topic taxonomy from arXiv. Provides broad research categories such as cs.LG, cs.AI, cs.CL, etc."@en .
+
+skgr:csoTopicSource a skg:TopicSource ;
+    rdfs:label "Computer Science Ontology (CSO)"@en ;
+    rdfs:comment "Micro-level topic taxonomy from CSO. Provides fine-grained research topics extracted and validated from scholarly literature."@en .

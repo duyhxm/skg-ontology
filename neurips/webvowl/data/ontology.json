@@ -1,0 +1,238 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://duyhxm.github.io/skg-ontology/core", "http://www.w3.org/2001/XMLSchema", "https://duyhxm.github.io/skg-ontology/neurips" ],
+    "title" : {
+      "en" : "SKG NeurIPS Extension Ontology"
+    },
+    "iri" : "https://duyhxm.github.io/skg-ontology/neurips",
+    "version" : "6.0.0",
+    "description" : {
+      "en" : "NeurIPS-specific extension terms separated from SKG core."
+    },
+    "comments" : {
+      "en" : "Use this extension with SKG core when venue-specific NeurIPS attributes are needed."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "6.0.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-05-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "SKG NeurIPS Extension Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://duyhxm.github.io/skg-ontology/neurips#NeuripsPresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/neurips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeuripsPresentationType",
+      "en" : "NeurIPS presentation type"
+    },
+    "comment" : {
+      "en" : "Presentation type such as poster or oral."
+    },
+    "id" : "0",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#ScholarlyWork",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyWork"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyEntity"
+    },
+    "subClasses" : [ "0", "5" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/neurips#NeuripsTrack",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/neurips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeuripsTrack",
+      "en" : "NeurIPS track"
+    },
+    "comment" : {
+      "en" : "Track category used by NeurIPS submission and publication workflow."
+    },
+    "id" : "5",
+    "superClasses" : [ "1", "7" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Track",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Track"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#PresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PresentationType"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "13",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "7",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsPresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/neurips",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasNeuripsPresentationType",
+      "en" : "has NeurIPS presentation type"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Links a work to a NeurIPS presentation type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsTrack",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/neurips",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasNeuripsTrack",
+      "en" : "has NeurIPS track"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Links a work to its NeurIPS track classification."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasTrack",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasTrack"
+    },
+    "domain" : "13",
+    "subproperty" : [ "11" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasPresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasPresentationType"
+    },
+    "domain" : "13",
+    "subproperty" : [ "9" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "10"
+  } ]
+}

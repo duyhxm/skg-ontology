@@ -1,0 +1,587 @@
+<https://duyhxm.github.io/skg-ontology/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://duyhxm.github.io/skg-ontology/core> <http://www.w3.org/2002/07/owl#versionIRI> <https://duyhxm.github.io/skg-ontology/core/6.0.0> .
+<https://duyhxm.github.io/skg-ontology/core> <http://purl.org/dc/terms/description> "Core ontology for scholarly knowledge graph data aligned with Dublin Core, Schema.org, FOAF, FaBiO, SKOS, PROV-O, and CiTO while preserving RDF-Star innovation patterns."@en .
+<https://duyhxm.github.io/skg-ontology/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://duyhxm.github.io/skg-ontology/core> <http://www.w3.org/2000/01/rdf-schema#comment> "Core TBox for multi-venue scholarly graph generation. Uses standard predicates where possible and preserves RDF-Star edge annotation patterns for provenance and confidence."@en .
+<https://duyhxm.github.io/skg-ontology/core> <http://www.w3.org/2002/07/owl#versionInfo> "6.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/cito/cites
+<http://purl.org/spar/cito/cites> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://duyhxm.github.io/skg-ontology/core#addresses
+<https://duyhxm.github.io/skg-ontology/core#addresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#addresses> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#addresses> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#addresses> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the scholarly work (paper-level) or a method/paradigm (entity-level) targets, investigates, or contributes to a specific machine-learning task."@en .
+<https://duyhxm.github.io/skg-ontology/core#addresses> <http://www.w3.org/2000/01/rdf-schema#label> "addresses"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#affiliatedWith
+<https://duyhxm.github.io/skg-ontology/core#affiliatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#affiliatedWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/affiliation> .
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#affiliatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Organization> .
+<https://duyhxm.github.io/skg-ontology/core#affiliatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Affiliation predicate for publication-context RDF-Star annotation on quoted hasAuthor edges; direct agent-to-organization affiliation links are not canonical in this profile."@en .
+<https://duyhxm.github.io/skg-ontology/core#affiliatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "affiliated with"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#applies
+<https://duyhxm.github.io/skg-ontology/core#applies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#applies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#applies> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#applies> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a model or its training process applies a method (optimizer, loss, augmentation, or preprocessing technique)."@en .
+<https://duyhxm.github.io/skg-ontology/core#applies> <http://www.w3.org/2000/01/rdf-schema#label> "applies"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#architectureVariantOf
+<https://duyhxm.github.io/skg-ontology/core#architectureVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#architectureVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+<https://duyhxm.github.io/skg-ontology/core#architectureVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+<https://duyhxm.github.io/skg-ontology/core#architectureVariantOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates an architecture is a variant or derivative of another architecture."@en .
+<https://duyhxm.github.io/skg-ontology/core#architectureVariantOf> <http://www.w3.org/2000/01/rdf-schema#label> "architecture variant of"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#cites
+<https://duyhxm.github.io/skg-ontology/core#cites> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#cites> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/cito/cites> .
+<https://duyhxm.github.io/skg-ontology/core#cites> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#cites> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#cites> <http://www.w3.org/2000/01/rdf-schema#label> "cites"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#designedFor
+<https://duyhxm.github.io/skg-ontology/core#designedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#designedFor> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Method> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#designedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#designedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the design intent of an architecture, paradigm, or method towards a task."@en .
+<https://duyhxm.github.io/skg-ontology/core#designedFor> <http://www.w3.org/2000/01/rdf-schema#label> "designed for"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasAuthor
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/author> .
+<https://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Agent> .
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Primary forward authorship edge for the current profile. Inverse traversal is resolved at query time."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://duyhxm.github.io/skg-ontology/core#hasIdentifier> .
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> .
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Optional preferred identifier scheme selected for merge or display policy."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has canonical identifier"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasIdentifier
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a work to an identifier scheme node. In RDF-Star data, each quoted edge should carry exactly one identifier literal annotation."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasPresentationType
+<https://duyhxm.github.io/skg-ontology/core#hasPresentationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasPresentationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasPresentationType> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#PresentationType> .
+<https://duyhxm.github.io/skg-ontology/core#hasPresentationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a scholarly work with the presentation format in which it was delivered at the venue."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasPresentationType> <http://www.w3.org/2000/01/rdf-schema#label> "has presentation type"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasSourceTopic
+<https://duyhxm.github.io/skg-ontology/core#hasSourceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasSourceTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasSourceTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#SourceTopic> .
+<https://duyhxm.github.io/skg-ontology/core#hasSourceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "Direct work-to-topic edge. In RDF-Star data, each edge should be annotated with skg:sourceSystem and skg:confidenceScore."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasSourceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "has source topic"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasTrack
+<https://duyhxm.github.io/skg-ontology/core#hasTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasTrack> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#hasTrack> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Track> .
+<https://duyhxm.github.io/skg-ontology/core#hasTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a scholarly work with the conference track under which it was published or presented."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasTrack> <http://www.w3.org/2000/01/rdf-schema#label> "has track"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#incorporates
+<https://duyhxm.github.io/skg-ontology/core#incorporates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#incorporates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+<https://duyhxm.github.io/skg-ontology/core#incorporates> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> .
+<https://duyhxm.github.io/skg-ontology/core#incorporates> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates an architecture includes a method as a core design component."@en .
+<https://duyhxm.github.io/skg-ontology/core#incorporates> <http://www.w3.org/2000/01/rdf-schema#label> "incorporates"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#EvaluationMethod> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the metric or analytical technique used to evaluate a model."@en .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is evaluated by"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates model performance is measured on a dataset."@en .
+<https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn> <http://www.w3.org/2000/01/rdf-schema#label> "is evaluated on"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#isInstanceOf
+<https://duyhxm.github.io/skg-ontology/core#isInstanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#isInstanceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#isInstanceOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+<https://duyhxm.github.io/skg-ontology/core#isInstanceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a model is an instance of an abstract architecture."@en .
+<https://duyhxm.github.io/skg-ontology/core#isInstanceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is instance of"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#isTrainedOn
+<https://duyhxm.github.io/skg-ontology/core#isTrainedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#isTrainedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#isTrainedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+<https://duyhxm.github.io/skg-ontology/core#isTrainedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates model weights are learned from a dataset."@en .
+<https://duyhxm.github.io/skg-ontology/core#isTrainedOn> <http://www.w3.org/2000/01/rdf-schema#label> "is trained on"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#mentions
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/mentions> .
+<https://schema.org/mentions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the scholarly work mentions an entity without explicitly proposing, using, or addressing it."@en .
+<https://duyhxm.github.io/skg-ontology/core#mentions> <http://www.w3.org/2000/01/rdf-schema#label> "mentions"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#methodVariantOf
+<https://duyhxm.github.io/skg-ontology/core#methodVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#methodVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#methodVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#methodVariantOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a method is an improvement, modification, or variant of another method."@en .
+<https://duyhxm.github.io/skg-ontology/core#methodVariantOf> <http://www.w3.org/2000/01/rdf-schema#label> "method variant of"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#modelVariantOf
+<https://duyhxm.github.io/skg-ontology/core#modelVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#modelVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#modelVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#modelVariantOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a model is an improvement, modification, or specialization of another model."@en .
+<https://duyhxm.github.io/skg-ontology/core#modelVariantOf> <http://www.w3.org/2000/01/rdf-schema#label> "model variant of"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#proposes
+<https://duyhxm.github.io/skg-ontology/core#proposes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#proposes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#proposes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Task> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Model> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Method> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#proposes> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the scholarly work introduces or proposes a new model, architecture, method, task, dataset, or learning paradigm."@en .
+<https://duyhxm.github.io/skg-ontology/core#proposes> <http://www.w3.org/2000/01/rdf-schema#label> "proposes"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#publishedIn
+<https://duyhxm.github.io/skg-ontology/core#publishedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#publishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#publishedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#PublicationVenue> .
+<https://duyhxm.github.io/skg-ontology/core#publishedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Work to publication venue."@en .
+<https://duyhxm.github.io/skg-ontology/core#publishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "published in"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#solves
+<https://duyhxm.github.io/skg-ontology/core#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#solves> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#solves> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a model is designed or applied to solve a task."@en .
+<https://duyhxm.github.io/skg-ontology/core#solves> <http://www.w3.org/2000/01/rdf-schema#label> "solves"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#supports
+<https://duyhxm.github.io/skg-ontology/core#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+<https://duyhxm.github.io/skg-ontology/core#supports> <http://www.w3.org/2000/01/rdf-schema#range> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a dataset is created or curated to support a task."@en .
+<https://duyhxm.github.io/skg-ontology/core#supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#uses
+<https://duyhxm.github.io/skg-ontology/core#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://duyhxm.github.io/skg-ontology/core#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#uses> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Model> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Method> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://duyhxm.github.io/skg-ontology/core#Architecture> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#uses> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the scholarly work utilizes an existing entity. LearningParadigm included for works that actively employ a paradigm (e.g., 'we use federated learning')."@en .
+<https://duyhxm.github.io/skg-ontology/core#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses"@en .
+# 
+# https://schema.org/affiliation
+# 
+# https://schema.org/author
+# 
+# https://schema.org/mentions
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://duyhxm.github.io/skg-ontology/core#confidenceScore
+<https://duyhxm.github.io/skg-ontology/core#confidenceScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://duyhxm.github.io/skg-ontology/core#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://duyhxm.github.io/skg-ontology/core#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended normalized range is 0.0 to 1.0. Intended for RDF-Star edge annotations."@en .
+<https://duyhxm.github.io/skg-ontology/core#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#label> "confidence score"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier literal value attached to quoted triple <<work skg:hasIdentifier scheme>>. Do not attach this literal directly to work or scheme nodes. Value must be normalized before loading."@en .
+<https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier value"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#methodSubtype
+<https://duyhxm.github.io/skg-ontology/core#methodSubtype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://duyhxm.github.io/skg-ontology/core#methodSubtype> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> .
+<https://duyhxm.github.io/skg-ontology/core#methodSubtype> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://duyhxm.github.io/skg-ontology/core#methodSubtype> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorizes the specific role of a training method. Validation is enforced at the Pydantic layer."@en .
+<https://duyhxm.github.io/skg-ontology/core#methodSubtype> <http://www.w3.org/2000/01/rdf-schema#label> "method subtype"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#organizationType
+<https://duyhxm.github.io/skg-ontology/core#organizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://duyhxm.github.io/skg-ontology/core#organizationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://duyhxm.github.io/skg-ontology/core#Organization> .
+<https://duyhxm.github.io/skg-ontology/core#organizationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://duyhxm.github.io/skg-ontology/core#organizationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the organization. Validation is enforced at the Pydantic layer."@en .
+<https://duyhxm.github.io/skg-ontology/core#organizationType> <http://www.w3.org/2000/01/rdf-schema#label> "organization type"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#sourceSystem
+<https://duyhxm.github.io/skg-ontology/core#sourceSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://duyhxm.github.io/skg-ontology/core#sourceSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://duyhxm.github.io/skg-ontology/core#sourceSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Intended for RDF-Star edge annotations, for example <<paper skg:hasSourceTopic topic>> skg:sourceSystem \"arxiv_api\"."@en .
+<https://duyhxm.github.io/skg-ontology/core#sourceSystem> <http://www.w3.org/2000/01/rdf-schema#label> "source system"@en .
+# 
+# https://schema.org/addressCountry
+<https://schema.org/addressCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/contentUrl
+<https://schema.org/contentUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/fabio/Conference
+<http://purl.org/spar/fabio/Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/fabio/Dataset
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/fabio/ScholarlyWork
+<http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Agent
+<https://duyhxm.github.io/skg-ontology/core#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://duyhxm.github.io/skg-ontology/core#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<https://duyhxm.github.io/skg-ontology/core#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Architecture
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Dataset> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract computational design used to build one or more models."@en .
+<https://duyhxm.github.io/skg-ontology/core#Architecture> <http://www.w3.org/2000/01/rdf-schema#label> "Architecture"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Conference
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Conference> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#PublicationVenue> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Organization> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Person> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic conference or symposium that publishes proceedings."@en .
+<https://duyhxm.github.io/skg-ontology/core#Conference> <http://www.w3.org/2000/01/rdf-schema#label> "Conference"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod
+<https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A method used for data collection, augmentation, preprocessing, or transformation."@en .
+<https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Data processing method"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Dataset
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Dataset> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#LearningParadigm> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A curated dataset used to train or evaluate models."@en .
+<https://duyhxm.github.io/skg-ontology/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#EvaluationMethod
+<https://duyhxm.github.io/skg-ontology/core#EvaluationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#EvaluationMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#EvaluationMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A method used to evaluate, analyze, or benchmark model behavior or performance."@en .
+<https://duyhxm.github.io/skg-ontology/core#EvaluationMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation method"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#IdentifierScheme
+<https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A taxonomy or namespace for identifiers (for example DOI or arXiv). This class represents identifier scheme type, not per-work identifier literal values."@en .
+<https://duyhxm.github.io/skg-ontology/core#IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier scheme"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#LearningParadigm
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2000/01/rdf-schema#comment> "A high-level framework that defines how learning occurs."@en .
+<https://duyhxm.github.io/skg-ontology/core#LearningParadigm> <http://www.w3.org/2000/01/rdf-schema#label> "Learning paradigm"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Method
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Model> .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2000/01/rdf-schema#comment> "A computational method used in model training, design, or evaluation."@en .
+<https://duyhxm.github.io/skg-ontology/core#Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Model
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Task> .
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "A concrete trained or named model instance based on an architecture."@en .
+<https://duyhxm.github.io/skg-ontology/core#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod
+<https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#Method> .
+<https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A method used in model architecture design, training, optimization, or inference."@en .
+<https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Model design and training method"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Organization
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#Agent> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Organization> .
+<https://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#Person> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Person
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#Agent> .
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#PresentationType
+<https://duyhxm.github.io/skg-ontology/core#PresentationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#PresentationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#PresentationType> <http://www.w3.org/2000/01/rdf-schema#comment> "A classification of how a scholarly work was presented (e.g., Oral, Poster, Spotlight)."@en .
+<https://duyhxm.github.io/skg-ontology/core#PresentationType> <http://www.w3.org/2000/01/rdf-schema#label> "Presentation type"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#PublicationVenue
+<https://duyhxm.github.io/skg-ontology/core#PublicationVenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#PublicationVenue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#PublicationVenue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#PublicationVenue> <http://www.w3.org/2000/01/rdf-schema#comment> "Conference, journal, workshop, or equivalent publication venue."@en .
+<https://duyhxm.github.io/skg-ontology/core#PublicationVenue> <http://www.w3.org/2000/01/rdf-schema#label> "Publication venue"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly entity"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#ScholarlyWork
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ScholarlyWork> .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/CreativeWork> .
+<https://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#comment> "A paper, article, preprint, or related scholarly work aligned with FaBiO and Schema.org."@en .
+<https://duyhxm.github.io/skg-ontology/core#ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly work"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#SourceTopic
+<https://duyhxm.github.io/skg-ontology/core#SourceTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#SourceTopic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#SourceTopic> <http://www.w3.org/2002/07/owl#disjointWith> <https://duyhxm.github.io/skg-ontology/core#TopicSource> .
+<https://duyhxm.github.io/skg-ontology/core#SourceTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "A source-native topic concept as defined within one topic source."@en .
+<https://duyhxm.github.io/skg-ontology/core#SourceTopic> <http://www.w3.org/2000/01/rdf-schema#label> "Source topic"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Task
+<https://duyhxm.github.io/skg-ontology/core#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://duyhxm.github.io/skg-ontology/core#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine-learning problem or objective. As a SKOS concept, tasks can be organized into taxonomies."@en .
+<https://duyhxm.github.io/skg-ontology/core#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#TopicSource
+<https://duyhxm.github.io/skg-ontology/core#TopicSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#TopicSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://duyhxm.github.io/skg-ontology/core#TopicSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A taxonomy source such as ArXiv or CSO."@en .
+<https://duyhxm.github.io/skg-ontology/core#TopicSource> <http://www.w3.org/2000/01/rdf-schema#label> "Topic source"@en .
+# 
+# https://duyhxm.github.io/skg-ontology/core#Track
+<https://duyhxm.github.io/skg-ontology/core#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://duyhxm.github.io/skg-ontology/core#Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity> .
+<https://duyhxm.github.io/skg-ontology/core#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A conference track (e.g., Main, Workshop, Datasets & Benchmarks)."@en .
+<https://duyhxm.github.io/skg-ontology/core#Track> <http://www.w3.org/2000/01/rdf-schema#label> "Track"@en .
+# 
+# https://schema.org/CreativeWork
+# 
+# https://schema.org/Event
+# 
+# https://schema.org/Organization
+# 
+# https://schema.org/Person
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://duyhxm.github.io/skg-ontology/core
+<https://duyhxm.github.io/skg-ontology/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://duyhxm.github.io/skg-ontology/core> <http://purl.org/dc/terms/issued> "2026-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://duyhxm.github.io/skg-ontology/core> <http://purl.org/dc/terms/title> "Scholarly Knowledge Graph Core Ontology"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

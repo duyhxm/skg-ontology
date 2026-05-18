@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://duyhxm.github.io/skg-ontology/neurips#"
+     xml:base="https://duyhxm.github.io/skg-ontology/neurips"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://duyhxm.github.io/skg-ontology/neurips">
+        <owl:versionIRI rdf:resource="https://duyhxm.github.io/skg-ontology/neurips/6.0.0"/>
+        <owl:imports rdf:resource="https://duyhxm.github.io/skg-ontology/core"/>
+        <terms:description xml:lang="en">NeurIPS-specific extension terms separated from SKG core.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-01</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">SKG NeurIPS Extension Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Use this extension with SKG core when venue-specific NeurIPS attributes are needed.</rdfs:comment>
+        <owl:versionInfo>6.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#hasPresentationType -->
+
+
+    <owl:ObjectProperty rdf:about="https://duyhxm.github.io/skg-ontology/core#hasPresentationType"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#hasTrack -->
+
+
+    <owl:ObjectProperty rdf:about="https://duyhxm.github.io/skg-ontology/core#hasTrack"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsPresentationType -->
+
+
+    <owl:ObjectProperty rdf:about="https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsPresentationType">
+        <rdfs:subPropertyOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#hasPresentationType"/>
+        <rdfs:domain rdf:resource="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork"/>
+        <rdfs:range rdf:resource="https://duyhxm.github.io/skg-ontology/neurips#NeuripsPresentationType"/>
+        <rdfs:comment xml:lang="en">Links a work to a NeurIPS presentation type.</rdfs:comment>
+        <rdfs:label xml:lang="en">has NeurIPS presentation type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsTrack -->
+
+
+    <owl:ObjectProperty rdf:about="https://duyhxm.github.io/skg-ontology/neurips#hasNeuripsTrack">
+        <rdfs:subPropertyOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#hasTrack"/>
+        <rdfs:domain rdf:resource="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork"/>
+        <rdfs:range rdf:resource="https://duyhxm.github.io/skg-ontology/neurips#NeuripsTrack"/>
+        <rdfs:comment xml:lang="en">Links a work to its NeurIPS track classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">has NeurIPS track</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#PresentationType -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/core#PresentationType"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#ScholarlyWork -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/core#ScholarlyWork"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/core#Track -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/core#Track"/>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/neurips#NeuripsPresentationType -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/neurips#NeuripsPresentationType">
+        <rdfs:subClassOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#PresentationType"/>
+        <rdfs:subClassOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity"/>
+        <rdfs:comment xml:lang="en">Presentation type such as poster or oral.</rdfs:comment>
+        <rdfs:label xml:lang="en">NeurIPS presentation type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://duyhxm.github.io/skg-ontology/neurips#NeuripsTrack -->
+
+
+    <owl:Class rdf:about="https://duyhxm.github.io/skg-ontology/neurips#NeuripsTrack">
+        <rdfs:subClassOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity"/>
+        <rdfs:subClassOf rdf:resource="https://duyhxm.github.io/skg-ontology/core#Track"/>
+        <rdfs:comment xml:lang="en">Track category used by NeurIPS submission and publication workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">NeurIPS track</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

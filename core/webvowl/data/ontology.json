@@ -1,0 +1,1865 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://duyhxm.github.io/skg-ontology/core", "https://schema.org", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://purl.org/spar/fabio", "http://purl.org/spar/cito", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "https://duyhxm.github.io/skg-ontology/core",
+    "version" : "6.0.0",
+    "description" : {
+      "en" : "Core ontology for scholarly knowledge graph data aligned with Dublin Core, Schema.org, FOAF, FaBiO, SKOS, PROV-O, and CiTO while preserving RDF-Star innovation patterns."
+    },
+    "comments" : {
+      "en" : "Core TBox for multi-venue scholarly graph generation. Uses standard predicates where possible and preserves RDF-Star edge annotation patterns for provenance and confidence."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "6.0.0",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "2", "3", "4", "5", "6", "7", "8" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "3", "4", "5", "6", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "22"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "5", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "3", "5", "6", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "26"
+  }, {
+    "instances" : 0,
+    "union" : [ "32", "33" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "31"
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "18", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#ModelDesignAndTrainingMethod",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModelDesignAndTrainingMethod",
+      "en" : "Model design and training method"
+    },
+    "comment" : {
+      "en" : "A method used in model architecture design, training, optimization, or inference."
+    },
+    "id" : "33",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#ScholarlyEntity",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyEntity",
+      "en" : "Scholarly entity"
+    },
+    "subClasses" : [ "2", "3", "4", "5", "11", "6", "18", "36", "7", "21", "19", "37" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Conference",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conference",
+      "en" : "Conference"
+    },
+    "comment" : {
+      "en" : "An academic conference or symposium that publishes proceedings."
+    },
+    "id" : "40",
+    "superClasses" : [ "41", "37" ]
+  }, {
+    "iri" : "https://schema.org/CreativeWork",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#SourceTopic",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SourceTopic",
+      "en" : "Source topic"
+    },
+    "comment" : {
+      "en" : "A source-native topic concept as defined within one topic source."
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "30" ],
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/spar/fabio/Conference",
+    "baseIri" : "http://purl.org/spar/fabio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conference"
+    },
+    "subClasses" : [ "40" ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#ScholarlyWork",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyWork",
+      "en" : "Scholarly work"
+    },
+    "comment" : {
+      "en" : "A paper, article, preprint, or related scholarly work aligned with FaBiO and Schema.org."
+    },
+    "id" : "18",
+    "superClasses" : [ "49", "63", "35" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Organization",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization"
+    },
+    "id" : "16",
+    "superClasses" : [ "64", "11", "25" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#DataProcessingMethod",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataProcessingMethod",
+      "en" : "Data processing method"
+    },
+    "comment" : {
+      "en" : "A method used for data collection, augmentation, preprocessing, or transformation."
+    },
+    "id" : "32",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#EvaluationMethod",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationMethod",
+      "en" : "Evaluation method"
+    },
+    "comment" : {
+      "en" : "A method used to evaluate, analyze, or benchmark model behavior or performance."
+    },
+    "id" : "39",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Architecture",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Architecture",
+      "en" : "Architecture"
+    },
+    "comment" : {
+      "en" : "An abstract computational design used to build one or more models."
+    },
+    "id" : "2",
+    "superClasses" : [ "1", "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Method",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Method",
+      "en" : "Method"
+    },
+    "subClasses" : [ "32", "39", "33" ],
+    "comment" : {
+      "en" : "A computational method used in model training, design, or evaluation."
+    },
+    "id" : "5",
+    "superClasses" : [ "1", "35" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#TopicSource",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TopicSource",
+      "en" : "Topic source"
+    },
+    "comment" : {
+      "en" : "A taxonomy source such as ArXiv or CSO."
+    },
+    "id" : "28",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "82",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/spar/fabio/ScholarlyWork",
+    "baseIri" : "http://purl.org/spar/fabio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyWork"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#IdentifierScheme",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IdentifierScheme",
+      "en" : "Identifier scheme"
+    },
+    "comment" : {
+      "en" : "A taxonomy or namespace for identifiers (for example DOI or arXiv). This class represents identifier scheme type, not per-work identifier literal values."
+    },
+    "id" : "36",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Task",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task",
+      "en" : "Task"
+    },
+    "comment" : {
+      "en" : "A machine-learning problem or objective. As a SKOS concept, tasks can be organized into taxonomies."
+    },
+    "id" : "4",
+    "superClasses" : [ "1", "35" ]
+  }, {
+    "iri" : "https://schema.org/Organization",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "subClasses" : [ "28" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Model",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model",
+      "en" : "Model"
+    },
+    "comment" : {
+      "en" : "A concrete trained or named model instance based on an architecture."
+    },
+    "id" : "6",
+    "superClasses" : [ "1", "35" ]
+  }, {
+    "iri" : "http://purl.org/spar/fabio/Dataset",
+    "baseIri" : "http://purl.org/spar/fabio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Track",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Track",
+      "en" : "Track"
+    },
+    "comment" : {
+      "en" : "A conference track (e.g., Main, Workshop, Datasets & Benchmarks)."
+    },
+    "id" : "19",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#PresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PresentationType",
+      "en" : "Presentation type"
+    },
+    "comment" : {
+      "en" : "A classification of how a scholarly work was presented (e.g., Oral, Poster, Spotlight)."
+    },
+    "id" : "21",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#PublicationVenue",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicationVenue",
+      "en" : "Publication venue"
+    },
+    "subClasses" : [ "40" ],
+    "comment" : {
+      "en" : "Conference, journal, workshop, or equivalent publication venue."
+    },
+    "id" : "37",
+    "superClasses" : [ "144", "35" ]
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "30" ],
+    "attributes" : [ "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#LearningParadigm",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningParadigm",
+      "en" : "Learning paradigm"
+    },
+    "comment" : {
+      "en" : "A high-level framework that defines how learning occurs."
+    },
+    "id" : "7",
+    "superClasses" : [ "1", "35" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Dataset",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "comment" : {
+      "en" : "A curated dataset used to train or evaluate models."
+    },
+    "id" : "3",
+    "superClasses" : [ "1", "35", "99" ]
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Agent",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "subClasses" : [ "30", "16" ],
+    "id" : "11",
+    "superClasses" : [ "10", "35", "53" ]
+  }, {
+    "iri" : "https://schema.org/Event",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "37" ],
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#Person",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "id" : "30",
+    "superClasses" : [ "11", "145", "55" ]
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#architectureVariantOf",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "architectureVariantOf",
+      "en" : "architecture variant of"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates an architecture is a variant or derivative of another architecture."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#isInstanceOf",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isInstanceOf",
+      "en" : "is instance of"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates a model is an instance of an abstract architecture."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#organizationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "organizationType",
+      "en" : "organization type"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Classification of the organization. Validation is enforced at the Pydantic layer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasTrack",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasTrack",
+      "en" : "has track"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates a scholarly work with the conference track under which it was published or presented."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasPresentationType",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasPresentationType",
+      "en" : "has presentation type"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates a scholarly work with the presentation format in which it was delivered at the venue."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "28",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "18",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#isEvaluatedBy",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "isEvaluatedBy",
+      "en" : "is evaluated by"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates the metric or analytical technique used to evaluate a model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://schema.org/mentions",
+    "baseIri" : "https://schema.org",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "mentions"
+    },
+    "domain" : "43",
+    "subproperty" : [ "44" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "30",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "25",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "35",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "35",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#publishedIn",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "publishedIn",
+      "en" : "published in"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Work to publication venue."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasIdentifierValue",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasIdentifierValue",
+      "en" : "has identifier value"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "Identifier literal value attached to quoted triple <<work skg:hasIdentifier scheme>>. Do not attach this literal directly to work or scheme nodes. Value must be normalized before loading."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#isTrainedOn",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isTrainedOn",
+      "en" : "is trained on"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates model weights are learned from a dataset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#proposes",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "proposes",
+      "en" : "proposes"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Indicates that the scholarly work introduces or proposes a new model, architecture, method, task, dataset, or learning paradigm."
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#applies",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "applies",
+      "en" : "applies"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates a model or its training process applies a method (optimizer, loss, augmentation, or preprocessing technique)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#designedFor",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "designedFor",
+      "en" : "designed for"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Indicates the design intent of an architecture, paradigm, or method towards a task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasSourceTopic",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasSourceTopic",
+      "en" : "has source topic"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Direct work-to-topic edge. In RDF-Star data, each edge should be annotated with skg:sourceSystem and skg:confidenceScore."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://schema.org/addressCountry",
+    "baseIri" : "https://schema.org",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "addressCountry"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "range" : "78",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://schema.org/author",
+    "baseIri" : "https://schema.org",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "domain" : "43",
+    "subproperty" : [ "94" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "range" : "64",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "37",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://purl.org/dc/terms/issued",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "issued"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "97"
+  }, {
+    "range" : "99",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#methodSubtype",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "methodSubtype",
+      "en" : "method subtype"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Categorizes the specific role of a training method. Validation is enforced at the Pydantic layer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "range" : "63",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#methodVariantOf",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "methodVariantOf",
+      "en" : "method variant of"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates a method is an improvement, modification, or variant of another method."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#addresses",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "addresses",
+      "en" : "addresses"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Indicates that the scholarly work (paper-level) or a method/paradigm (entity-level) targets, investigates, or contributes to a specific machine-learning task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#incorporates",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "incorporates",
+      "en" : "incorporates"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates an architecture includes a method as a core design component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#solves",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "solves",
+      "en" : "solves"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates a model is designed or applied to solve a task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://schema.org/name",
+    "baseIri" : "https://schema.org",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://schema.org/url",
+    "baseIri" : "https://schema.org",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://schema.org/contentUrl",
+    "baseIri" : "https://schema.org",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "contentUrl"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "108"
+  }, {
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "5",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "55",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "53",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "5",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "35",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasCanonicalIdentifier",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasCanonicalIdentifier",
+      "en" : "has canonical identifier"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Optional preferred identifier scheme selected for merge or display policy."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "range" : "35",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "49",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "35",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#isEvaluatedOn",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isEvaluatedOn",
+      "en" : "is evaluated on"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates model performance is measured on a dataset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#supports",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "supports",
+      "en" : "supports"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Indicates a dataset is created or curated to support a task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#uses",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "uses",
+      "en" : "uses"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Indicates that the scholarly work utilizes an existing entity. LearningParadigm included for works that actively employ a paradigm (e.g., 'we use federated learning')."
+    },
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasAuthor",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasAuthor",
+      "en" : "has author"
+    },
+    "superproperty" : [ "93" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Primary forward authorship edge for the current profile. Inverse traversal is resolved at query time."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://schema.org/affiliation",
+    "baseIri" : "https://schema.org",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "affiliation"
+    },
+    "domain" : "43",
+    "subproperty" : [ "125" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#modelVariantOf",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "modelVariantOf",
+      "en" : "model variant of"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates a model is an improvement, modification, or specialization of another model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "range" : "35",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "35",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "35",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "35",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "35",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "35",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "35",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#sourceSystem",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "sourceSystem",
+      "en" : "source system"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "Intended for RDF-Star edge annotations, for example <<paper skg:hasSourceTopic topic>> skg:sourceSystem \"arxiv_api\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#hasIdentifier",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasIdentifier",
+      "en" : "has identifier"
+    },
+    "domain" : "18",
+    "subproperty" : [ "116" ],
+    "comment" : {
+      "en" : "Links a work to an identifier scheme node. In RDF-Star data, each quoted edge should carry exactly one identifier literal annotation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "18",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "30",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#confidenceScore",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "confidenceScore",
+      "en" : "confidence score"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "Recommended normalized range is 0.0 to 1.0. Intended for RDF-Star edge annotations."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.org/spar/cito/cites",
+    "baseIri" : "http://purl.org/spar/cito",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "cites"
+    },
+    "domain" : "43",
+    "subproperty" : [ "142" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "141"
+  }, {
+    "range" : "16",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "7",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#mentions",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "mentions",
+      "en" : "mentions"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Indicates that the scholarly work mentions an entity without explicitly proposing, using, or addressing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#affiliatedWith",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "affiliatedWith",
+      "en" : "affiliated with"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "Affiliation predicate for publication-context RDF-Star annotation on quoted hasAuthor edges; direct agent-to-organization affiliation links are not canonical in this profile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://duyhxm.github.io/skg-ontology/core#cites",
+    "baseIri" : "https://duyhxm.github.io/skg-ontology/core",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "cites",
+      "en" : "cites"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.org/dc/terms/abstract",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "abstract"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "150"
+  }, {
+    "range" : "11",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "145",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "144",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  } ]
+}

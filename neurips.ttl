@@ -1,0 +1,80 @@
+#################################################################
+#
+#    Scholarly Knowledge Graph Ontology (SKG)
+#    NeurIPS Extension TBox
+#    Version: 6.0.0
+#    Date: 2026-05-01
+#
+#    Purpose:
+#    - Define NeurIPS-specific schema terms outside core ontology.
+#    - Keep skg-core.ttl source-agnostic and reusable.
+#
+#################################################################
+
+@prefix skg: <https://duyhxm.github.io/skg-ontology/core#> .
+@prefix skg-neurips: <https://duyhxm.github.io/skg-ontology/neurips#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#################################################################
+# 1) Ontology Header
+#################################################################
+
+<https://duyhxm.github.io/skg-ontology/neurips> a owl:Ontology ;
+    owl:imports <https://duyhxm.github.io/skg-ontology/core> ;
+    owl:versionIRI <https://duyhxm.github.io/skg-ontology/neurips/6.0.0> ;
+    owl:versionInfo "6.0.0" ;
+    dcterms:title "SKG NeurIPS Extension Ontology"@en ;
+    dcterms:description "NeurIPS-specific extension terms separated from SKG core."@en ;
+    dcterms:issued "2026-05-01"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Use this extension with SKG core when venue-specific NeurIPS attributes are needed."@en .
+
+#################################################################
+# 2) NeurIPS Classes
+#################################################################
+
+skg-neurips:NeuripsTrack a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity ;
+    rdfs:label "NeurIPS track"@en ;
+    rdfs:comment "Track category used by NeurIPS submission and publication workflow."@en .
+
+skg-neurips:NeuripsPresentationType a owl:Class ;
+    rdfs:subClassOf skg:ScholarlyEntity ;
+    rdfs:label "NeurIPS presentation type"@en ;
+    rdfs:comment "Presentation type such as poster or oral."@en .
+
+#################################################################
+# 3) NeurIPS Object Properties
+#################################################################
+
+skg-neurips:hasNeuripsTrack a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg-neurips:NeuripsTrack ;
+    rdfs:label "has NeurIPS track"@en ;
+    rdfs:comment "Links a work to its NeurIPS track classification."@en .
+
+skg-neurips:hasNeuripsPresentationType a owl:ObjectProperty ;
+    rdfs:domain skg:ScholarlyWork ;
+    rdfs:range skg-neurips:NeuripsPresentationType ;
+    rdfs:label "has NeurIPS presentation type"@en ;
+    rdfs:comment "Links a work to a NeurIPS presentation type."@en .
+
+#################################################################
+# 4) Backward Compatibility Declarations
+#    Bind NeurIPS-specific terms to core SKG terms so queries
+#    against skg:hasTrack / skg:Track etc. also match NeurIPS
+#    instances.  These rdfs:subClassOf / rdfs:subPropertyOf
+#    axioms maintain backward compatibility with version 5.x.
+#################################################################
+
+skg-neurips:hasNeuripsTrack rdfs:subPropertyOf skg:hasTrack .
+
+skg-neurips:hasNeuripsPresentationType rdfs:subPropertyOf skg:hasPresentationType .
+
+skg-neurips:NeuripsTrack rdfs:subClassOf skg:Track .
+
+skg-neurips:NeuripsPresentationType rdfs:subClassOf skg:PresentationType .

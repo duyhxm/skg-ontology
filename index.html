@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarly Knowledge Graph (SKG) Ontology</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a2e;
+      --accent: #4361ee;
+      --accent-light: #eef0ff;
+      --border: #e0e0e0;
+      --code-bg: #f5f5f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f23;
+        --text: #e0e0e0;
+        --accent: #4cc9f0;
+        --accent-light: #1a1a3e;
+        --border: #2a2a4a;
+        --code-bg: #1a1a3e;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; }
+    p { margin-bottom: 1rem; }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.2rem 0.7rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.2rem;
+      margin: 1rem 0;
+      background: var(--accent-light);
+    }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .card a:hover { text-decoration: underline; }
+    .card .meta { font-size: 0.85rem; opacity: 0.8; margin-top: 0.3rem; }
+    code {
+      background: var(--code-bg);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.3rem; }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.8rem;
+      border: 1px solid var(--border);
+    }
+    th { background: var(--accent-light); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<h1>📚 Scholarly Knowledge Graph (SKG) Ontology</h1>
+<p>
+  The SKG Ontology models scholarly publications — papers, authors, venues, citations, 
+  datasets, ML methods — with provenance annotations via RDF-star. Designed for the 
+  NeurIPS Knowledge Graph pipeline.
+</p>
+<p>
+  <span class="badge">Version 6.0.0</span>
+  <span class="badge" style="background: #2ec4b6;">CC-BY 4.0</span>
+  <span class="badge" style="background: #e71d36;">NeurIPS</span>
+</p>
+
+<h2>Ontology Modules</h2>
+
+<div class="card">
+  <h3><a href="core/">SKG Core Ontology</a></h3>
+  <p>
+    Source-agnostic core TBox: classes and properties for scholarly works, authors, 
+    organizations, venues, topics, identifiers, and ML research semantics 
+    (tasks, datasets, methods, models, architectures).
+  </p>
+  <div class="meta">
+    Namespace: <code>https://duyhxm.github.io/skg-ontology/core#</code><br>
+    Downloads: 
+    <a href="core.ttl">TTL</a> · 
+    <a href="core/ontology.owl">OWL/XML</a> · 
+    <a href="core/ontology.jsonld">JSON-LD</a> · 
+    <a href="core/ontology.nt">NTriples</a><br>
+    <a href="core/webvowl/index.html">🌐 WebVowl visualization</a>
+  </div>
+</div>
+
+<div class="card">
+  <h3><a href="neurips/">SKG NeurIPS Extension</a></h3>
+  <p>
+    NeurIPS-specific TBox extension: venue tracks, review outcome types, 
+    and conference-specific terms. Imports SKG Core.
+  </p>
+  <div class="meta">
+    Namespace: <code>https://duyhxm.github.io/skg-ontology/neurips#</code><br>
+    Imports: <code>skg-core</code><br>
+    Downloads: 
+    <a href="neurips.ttl">TTL</a> · 
+    <a href="neurips/ontology.owl">OWL/XML</a> · 
+    <a href="neurips/ontology.jsonld">JSON-LD</a> · 
+    <a href="neurips/ontology.nt">NTriples</a><br>
+    <a href="neurips/webvowl/index.html">🌐 WebVowl visualization</a>
+  </div>
+</div>
+
+<div class="card">
+  <h3><a href="seed/skg-neurips-seed.ttl">NeurIPS Seed Instances (ABox)</a></h3>
+  <p>
+    Starter individuals for NeurIPS extension terms, including reusable 
+    identifier scheme seed nodes used by runtime data.
+  </p>
+  <div class="meta">
+    Namespace: <code>https://duyhxm.github.io/skg-ontology/resource/neurips/</code><br>
+    Imports: <code>skg-neurips-extension</code>
+  </div>
+</div>
+
+<h2>Namespace Index</h2>
+<table>
+  <tr><th>Prefix</th><th>Namespace URI</th><th>Used in</th></tr>
+  <tr><td><code>skg:</code></td><td><code>https://duyhxm.github.io/skg-ontology/core#</code></td><td>Core schema terms</td></tr>
+  <tr><td><code>skg-neurips:</code></td><td><code>https://duyhxm.github.io/skg-ontology/neurips#</code></td><td>NeurIPS extension terms</td></tr>
+  <tr><td><code>skgr:</code></td><td><code>https://duyhxm.github.io/skg-ontology/resource/core/</code></td><td>Core resource instances</td></tr>
+  <tr><td><code>skgr-neurips:</code></td><td><code>https://duyhxm.github.io/skg-ontology/resource/neurips/</code></td><td>NeurIPS resource instances</td></tr>
+</table>
+
+<h2>Links</h2>
+<ul>
+  <li><strong>GitHub source (TTL files):</strong> 
+    <a href="https://github.com/duyhxm/skg-data-pipeline/tree/main/src/skg_pipeline/infrastructure/ontology">
+      skg-data-pipeline/src/.../ontology/</a></li>
+  <li><strong>SHACL constraints:</strong> 
+    <a href="https://github.com/duyhxm/skg-data-pipeline/blob/main/src/skg_pipeline/infrastructure/ontology/skg-core.shacl.ttl">skg-core.shacl.ttl</a> · 
+    <a href="https://github.com/duyhxm/skg-data-pipeline/blob/main/src/skg_pipeline/infrastructure/ontology/skg-neurips-extension.shacl.ttl">skg-neurips-extension.shacl.ttl</a></li>
+  <li><strong>License:</strong> 
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a></li>
+</ul>
+
+<div class="footer">
+  <p>Part of the <a href="https://github.com/duyhxm/skg-data-pipeline">SKG Data Pipeline</a> project — a thesis on Scholarly Knowledge Graph construction from NeurIPS publications.</p>
+  <p>Generated with <a href="https://github.com/dgarijo/Widoco">WIDOCO</a> · Turtle, OWL/XML, JSON-LD, and NTriples serializations available.</p>
+</div>
+
+</body>
+</html>
